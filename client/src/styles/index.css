@@ -1,0 +1,157 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0; padding: 0;
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+    background: var(--color-bg);
+    overflow: hidden;
+    overscroll-behavior: none;
+    min-height: 100dvh;
+  }
+
+  #root {
+    height: 100dvh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.2;
+  }
+
+  button { font-family: var(--font-body); cursor: pointer; }
+
+  :focus-visible {
+    outline: 2px solid var(--color-police);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  .touch-target { min-height: 44px; min-width: 44px; }
+}
+
+/* ── Leaflet overrides ──────────────────────────────── */
+.leaflet-container {
+  width: 100%; height: 100%;
+  font-family: var(--font-body) !important;
+  background: var(--color-bg);
+}
+
+.leaflet-tile-pane { filter: var(--map-tile-filter, none); }
+
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: var(--shadow-md) !important;
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  background: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+  border-bottom-color: var(--color-border) !important;
+  font-size: 18px !important;
+  width: 36px !important; height: 36px !important;
+  line-height: 36px !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: var(--color-surface-elevated) !important;
+}
+
+.leaflet-control-attribution {
+  background: var(--color-glass) !important;
+  color: var(--color-text-secondary) !important;
+  font-size: 10px !important;
+  backdrop-filter: blur(8px);
+}
+
+.leaflet-control-attribution a { color: var(--color-police) !important; }
+
+.leaflet-popup-content-wrapper {
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+  background: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.leaflet-popup-tip { background: var(--color-surface) !important; }
+.leaflet-popup-close-button { color: var(--color-text-secondary) !important; }
+
+/* ── Marker clusters ────────────────────────────────── */
+.marker-cluster {
+  background: var(--color-glass) !important;
+  backdrop-filter: blur(8px);
+}
+.marker-cluster div {
+  background: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-display) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+/* ── Dark Mode Map Tiles ────────────────────────────── */
+.dark-tiles img {
+  filter: invert(100%) hue-rotate(180deg) brightness(90%) contrast(90%);
+}
+
+/* ── Custom marker reset ────────────────────────────── */
+.custom-marker { background: none !important; border: none !important; }
+.user-marker { background: none !important; border: none !important; }
+
+/* ── Pulsing user dot ───────────────────────────────── */
+@keyframes user-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.8); opacity: 0; }
+}
+.user-pulse-ring { animation: user-pulse 2s ease-in-out infinite; }
+
+/* ── Glass morphism ─────────────────────────────────── */
+@layer utilities {
+  .glass {
+    background: var(--color-glass);
+    backdrop-filter: blur(16px) saturate(1.4);
+    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    border: 1px solid var(--color-glass-border);
+  }
+  .glass-strong {
+    background: var(--color-surface-overlay);
+    backdrop-filter: blur(24px) saturate(1.6);
+    -webkit-backdrop-filter: blur(24px) saturate(1.6);
+    border: 1px solid var(--color-glass-border);
+  }
+}
+
+/* ── Reduced motion ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .user-pulse-ring { animation: none; }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-tertiary); }

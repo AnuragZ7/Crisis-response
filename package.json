@@ -1,0 +1,18 @@
+{
+  "name": "tumakuru-rapid-response",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "seed": "cd server && node src/seed.js",
+    "build:roads": "cd server && npm run build:roads",
+    "sim:check": "cd server && npm run sim:check",
+    "test": "cd server && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

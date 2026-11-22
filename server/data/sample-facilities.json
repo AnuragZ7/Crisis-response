@@ -1,0 +1,74 @@
+[
+  {
+    "id": "hosp-1",
+    "name": "District Hospital Tumkur",
+    "type": "hospital",
+    "position": { "type": "Point", "coordinates": [77.1025, 13.3379] },
+    "address": "B.H. Road, Tumakuru",
+    "phone": "0816-2278700",
+    "source": "sample"
+  },
+  {
+    "id": "hosp-2",
+    "name": "Sri Siddaganga Hospital",
+    "type": "hospital",
+    "position": { "type": "Point", "coordinates": [77.0978, 13.3317] },
+    "address": "Siddaganga Mutt, Tumakuru",
+    "phone": "0816-2264201",
+    "source": "sample"
+  },
+  {
+    "id": "hosp-3",
+    "name": "SSIT Medical College Hospital",
+    "type": "hospital",
+    "position": { "type": "Point", "coordinates": [77.1130, 13.3425] },
+    "address": "NH-48, Tumakuru",
+    "phone": "0816-2212345",
+    "source": "sample"
+  },
+  {
+    "id": "fire-1",
+    "name": "Tumkur City Fire Station",
+    "type": "fire_station",
+    "position": { "type": "Point", "coordinates": [77.1012, 13.3410] },
+    "address": "Main Road, Tumakuru",
+    "phone": "0816-101",
+    "source": "sample"
+  },
+  {
+    "id": "fire-2",
+    "name": "Tumkur Taluk Fire Station",
+    "type": "fire_station",
+    "position": { "type": "Point", "coordinates": [77.0870, 13.3280] },
+    "address": "Kunigal Road, Tumakuru",
+    "phone": "0816-101",
+    "source": "sample"
+  },
+  {
+    "id": "police-1",
+    "name": "Tumkur City Police Station",
+    "type": "police",
+    "position": { "type": "Point", "coordinates": [77.0999, 13.3365] },
+    "address": "Ashoka Road, Tumakuru",
+    "phone": "0816-100",
+    "source": "sample"
+  },
+  {
+    "id": "police-2",
+    "name": "Tumkur Town Police Station",
+    "type": "police",
+    "position": { "type": "Point", "coordinates": [77.1050, 13.3450] },
+    "address": "Bangalore Road, Tumakuru",
+    "phone": "0816-100",
+    "source": "sample"
+  },
+  {
+    "id": "police-3",
+    "name": "Kyathasandra Police Station",
+    "type": "police",
+    "position": { "type": "Point", "coordinates": [77.1150, 13.3220] },
+    "address": "Kyathasandra, Tumakuru",
+    "phone": "0816-100",
+    "source": "sample"
+  }
+]

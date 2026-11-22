@@ -1,0 +1,18 @@
+{
+  "short_name": "RapidResponse",
+  "name": "Tumakuru Rapid Response - ತುಮಕೂರು ತುರ್ತು ಸ್ಪಂದನೆ",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0F1117",
+  "theme_color": "#DC2626",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["utilities", "medical", "government"]
+}

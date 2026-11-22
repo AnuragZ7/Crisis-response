@@ -1,0 +1,140 @@
+[
+  {
+    "name": "District Hospital Tumkur",
+    "type": "hospital",
+    "position": {
+      "type": "Point",
+      "coordinates": [77.1025, 13.3379]
+    },
+    "address": "B.H. Road, Tumakuru, Karnataka 572101",
+    "phone": "0816-2278700",
+    "icuBedsTotal": 20,
+    "icuBedsAvailable": 7,
+    "generalBedsTotal": 120,
+    "generalBedsAvailable": 34,
+    "ventilators": 12,
+    "ambulancesTotal": 4,
+    "ambulancesAvailable": 2,
+    "hasTraumaCenter": true,
+    "hasBloodBank": true,
+    "hasBurnUnit": true,
+    "hasCardiacUnit": true,
+    "specialties": ["trauma", "cardiac", "burns", "general", "orthopedics"],
+    "isDemo": true
+  },
+  {
+    "name": "Sri Siddhartha Medical College Hospital",
+    "type": "hospital",
+    "position": {
+      "type": "Point",
+      "coordinates": [77.1130, 13.3425]
+    },
+    "address": "NH-48, Agalakote, Tumakuru, Karnataka 572107",
+    "phone": "0816-2212345",
+    "icuBedsTotal": 25,
+    "icuBedsAvailable": 9,
+    "generalBedsTotal": 150,
+    "generalBedsAvailable": 48,
+    "ventilators": 16,
+    "ambulancesTotal": 4,
+    "ambulancesAvailable": 2,
+    "hasTraumaCenter": true,
+    "hasBloodBank": true,
+    "hasBurnUnit": false,
+    "hasCardiacUnit": true,
+    "specialties": ["cardiac", "trauma", "neuro", "general"],
+    "isDemo": true
+  },
+  {
+    "name": "Government Medical College Hospital",
+    "type": "hospital",
+    "position": {
+      "type": "Point",
+      "coordinates": [77.1045572, 13.3392288]
+    },
+    "address": "Ashoka Road, Tumakuru, Karnataka 572101",
+    "phone": "0816-2278800",
+    "icuBedsTotal": 15,
+    "icuBedsAvailable": 3,
+    "generalBedsTotal": 90,
+    "generalBedsAvailable": 19,
+    "ventilators": 8,
+    "ambulancesTotal": 2,
+    "ambulancesAvailable": 1,
+    "hasTraumaCenter": true,
+    "hasBloodBank": true,
+    "hasBurnUnit": true,
+    "hasCardiacUnit": false,
+    "specialties": ["trauma", "burns", "general"],
+    "isDemo": true
+  },
+  {
+    "name": "Sri Siddaganga Hospital",
+    "type": "hospital",
+    "position": {
+      "type": "Point",
+      "coordinates": [77.0978, 13.3317]
+    },
+    "address": "Siddaganga Mutt, Tumakuru, Karnataka 572102",
+    "phone": "0816-2264201",
+    "icuBedsTotal": 12,
+    "icuBedsAvailable": 4,
+    "generalBedsTotal": 80,
+    "generalBedsAvailable": 22,
+    "ventilators": 6,
+    "ambulancesTotal": 2,
+    "ambulancesAvailable": 1,
+    "hasTraumaCenter": false,
+    "hasBloodBank": true,
+    "hasBurnUnit": false,
+    "hasCardiacUnit": true,
+    "specialties": ["cardiac", "pediatrics", "general"],
+    "isDemo": true
+  },
+  {
+    "name": "Shridevi Institute of Medical Sciences",
+    "type": "hospital",
+    "position": {
+      "type": "Point",
+      "coordinates": [77.0850, 13.3550]
+    },
+    "address": "Sira Road, Tumakuru, Karnataka 572106",
+    "phone": "0816-2212222",
+    "icuBedsTotal": 18,
+    "icuBedsAvailable": 0,
+    "generalBedsTotal": 100,
+    "generalBedsAvailable": 15,
+    "ventilators": 10,
+    "ambulancesTotal": 2,
+    "ambulancesAvailable": 1,
+    "hasTraumaCenter": true,
+    "hasBloodBank": true,
+    "hasBurnUnit": false,
+    "hasCardiacUnit": true,
+    "specialties": ["cardiac", "trauma", "orthopedics"],
+    "isDemo": true
+  },
+  {
+    "name": "Kyathasandra Government Hospital",
+    "type": "hospital",
+    "position": {
+      "type": "Point",
+      "coordinates": [77.1447513, 13.3141459]
+    },
+    "address": "NH-4, Kyathasandra, Tumakuru, Karnataka 572104",
+    "phone": "0816-2281100",
+    "icuBedsTotal": 6,
+    "icuBedsAvailable": 2,
+    "generalBedsTotal": 40,
+    "generalBedsAvailable": 12,
+    "ventilators": 3,
+    "ambulancesTotal": 2,
+    "ambulancesAvailable": 1,
+    "hasTraumaCenter": false,
+    "hasBloodBank": false,
+    "hasBurnUnit": false,
+    "hasCardiacUnit": false,
+    "specialties": ["general"],
+    "isDemo": true
+  }
+]

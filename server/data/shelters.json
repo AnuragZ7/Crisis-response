@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Mahatma Gandhi Stadium Relief Shelter",
+    "address": "Opp. Town Hall, MG Road, Tumakuru",
+    "phone": "0816-2279911",
+    "position": { "type": "Point", "coordinates": [77.1030, 13.3400] },
+    "capacity": 600,
+    "occupancy": 120,
+    "amenities": ["food", "clean_water", "medical_first_aid", "bedding", "backup_power"],
+    "isDemo": true
+  },
+  {
+    "name": "Town Hall Community Relief Center",
+    "address": "B.H. Road, Near District Hospital, Tumakuru",
+    "phone": "0816-2279922",
+    "position": { "type": "Point", "coordinates": [77.1025, 13.3380] },
+    "capacity": 350,
+    "occupancy": 85,
+    "amenities": ["food", "clean_water", "blankets"],
+    "isDemo": true
+  },
+  {
+    "name": "Government Polytechnic College Relief Camp",
+    "address": "Bangalore Road, Batawadi, Tumakuru",
+    "phone": "0816-2279933",
+    "position": { "type": "Point", "coordinates": [77.1080, 13.3430] },
+    "capacity": 400,
+    "occupancy": 110,
+    "amenities": ["food", "clean_water", "medical_first_aid", "bedding"],
+    "isDemo": true
+  },
+  {
+    "name": "SSIT Campus Emergency Shelter",
+    "address": "NH-48, Maralur, Tumakuru",
+    "phone": "0816-2279944",
+    "position": { "type": "Point", "coordinates": [77.1140, 13.3435] },
+    "capacity": 500,
+    "occupancy": 140,
+    "amenities": ["food", "clean_water", "medical_first_aid", "backup_power", "charging_stations"],
+    "isDemo": true
+  },
+  {
+    "name": "Siddaganga Mutt Community Relief Center",
+    "address": "Kyatsandra / Siddaganga Hills, Tumakuru",
+    "phone": "0816-2279955",
+    "position": { "type": "Point", "coordinates": [77.0980, 13.3325] },
+    "capacity": 800,
+    "occupancy": 210,
+    "amenities": ["mass_kitchen_food", "clean_water", "dormitory", "medical_first_aid"],
+    "isDemo": true
+  }
+]
